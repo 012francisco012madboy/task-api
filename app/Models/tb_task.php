@@ -12,6 +12,7 @@ class tb_task extends Model
     protected $fillable = [
         "title",
         "description",
+        "user_id",
         "state_id"
     ];
 }
