@@ -1,0 +1,219 @@
+type: collection.insomnia.rest/5.0
+name: TASK
+meta:
+  id: wrk_3f534cfe10ff4bfcad789d9cdc6f1890
+  created: 1749735140112
+  modified: 1749735140112
+  description: ""
+collection:
+  - url: "{{ _.apiTask }}add-task"
+    name: Add Task
+    meta:
+      id: req_3637e1cc52834ae8aad4f4afa413fb92
+      created: 1749627651194
+      modified: 1749735385750
+      isPrivate: false
+      description: ""
+      sortKey: -1749627651194
+    method: POST
+    parameters:
+      - id: pair_b94706650ec74637aaa2bd95e67b1094
+        name: title
+        value: Programar
+        description: ""
+        disabled: false
+      - id: pair_3a6da657e57446daa8c012b8a87422bf
+        name: description
+        value: Terminar o desenvolvimento dos testes
+        description: ""
+        disabled: false
+      - id: pair_4415c5a3d2ce4a5cb11811d3da9b18a3
+        name: user_id
+        value: "1"
+        description: ""
+        disabled: false
+      - id: pair_fc6fc80291e048afab312de014a56397
+        name: state_id
+        value: "1"
+        description: ""
+        disabled: false
+    headers:
+      - name: User-Agent
+        value: insomnia/10.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.apiTask }}view-task/1"
+    name: View Task
+    meta:
+      id: req_22783d56daf341d8bc3bf17338a86974
+      created: 1749630481020
+      modified: 1749751745417
+      isPrivate: false
+      description: ""
+      sortKey: -1749630481020
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/10.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.apiTask }}show-task/{% hash 'sha256', 'hex', '' %}/2"
+    name: Show Task
+    meta:
+      id: req_304c736e44484dacb86e1e6c5e4937e9
+      created: 1749631727619
+      modified: 1749736291033
+      isPrivate: false
+      description: ""
+      sortKey: -1749631727619
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/10.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.apiTask }}filter-task/1/1"
+    name: Filter Task
+    meta:
+      id: req_1ba1a0ed3d41475a9c2627cf72957b6a
+      created: 1749631969541
+      modified: 1749735451396
+      isPrivate: false
+      description: ""
+      sortKey: -1749631969541
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/10.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.apiTask }}update-state-task/1/2"
+    name: Update State Task
+    meta:
+      id: req_72c8c54d07364bc79f5248c85728391e
+      created: 1749633484964
+      modified: 1749751792389
+      isPrivate: false
+      description: ""
+      sortKey: -1749633484964
+    method: PATCH
+    parameters:
+      - id: pair_9ce4b2c7c9d5469dacd08a76ea1e301f
+        name: state_id
+        value: "3"
+        description: ""
+        disabled: false
+    headers:
+      - name: User-Agent
+        value: insomnia/10.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.apiTask }}delete-task/1/3"
+    name: Delete Task
+    meta:
+      id: req_e8e39a5978be43398168565b035ca66d
+      created: 1749634477243
+      modified: 1749735480123
+      isPrivate: false
+      description: ""
+      sortKey: -1749634477243
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/10.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.apiTask }}view-state"
+    name: View State
+    meta:
+      id: req_10eafd0a846247789717dd38b1a5ebd1
+      created: 1749736724300
+      modified: 1749736757589
+      isPrivate: false
+      description: ""
+      sortKey: -1749736724300
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.2.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_67437b5e07524e588e3182a818dadd9c
+    created: 1749627604696
+    modified: 1749630366180
+  cookies:
+    - key: XSRF-TOKEN
+      value: eyJpdiI6Ikpqb2liS0tSUEM3Ujk4OEV4TURsbVE9PSIsInZhbHVlIjoiS0RKaUZaejRmRWo2cy9tTGRLcXc4SGtVdDA0dENHRlVERUs1UkJtMUdDTXhEbWIvaVVjeW9DZEZtS3dSY1NOK2crS3VaRERiR0hCOU9kNUg3MU5CRzMvUE93eE5QZ28rZkt3QU5iY3RsNUF6blZyb3ZFaUNxRktmcExUT2dvK1giLCJtYWMiOiJjYjg1MTUzZjdmNmEzYmFmYzIyMjU1NzZhNTA4MDM5ZjBmNzdiNmYzMDVlYjdjMGM4NmI3Mjc1ZDAyOTYzMGYxIiwidGFnIjoiIn0%3D
+      maxAge: 7200
+      domain: 127.0.0.1
+      path: /
+      hostOnly: true
+      creation: 2025-06-11T08:26:06.178Z
+      lastAccessed: 2025-06-11T08:26:06.178Z
+      sameSite: lax
+      id: a1b494ff-f8c0-4ccc-b1d5-7c8363508e5c
+    - key: laravel_session
+      value: eyJpdiI6IlFtSFY5d29tV3Rlam5JZVNzMHlUaVE9PSIsInZhbHVlIjoiOFlNeVRLeUxySlVCSDFza3doU3Jsb2JQeHVKZ3VHeVBQQlhjR21QRkZDODVqa3JFbzF3bjhIL1B1UTdQMjJhdVBPYlhJTkVVeTJqODllTDVVemdoT1pkNnZNaGg5eUVUdEpqdWdTMWRkeUlhYlVoM0VTT1l0c0IrYm5ZRVpRUXEiLCJtYWMiOiIzZDRhMGRiZjU2MmM4YTA5ZWFiMDliNzc4NzRlYzE2NmUyZjZiYWZkZmJlNWFiYmQ1OTZlYzYyYjFkMmUwNWIxIiwidGFnIjoiIn0%3D
+      maxAge: 7200
+      domain: 127.0.0.1
+      path: /
+      httpOnly: true
+      hostOnly: true
+      creation: 2025-06-11T08:26:06.180Z
+      lastAccessed: 2025-06-11T08:26:06.180Z
+      sameSite: lax
+      id: 53a9ca65-2be9-48a0-9935-31c2d28b1fb0
+environments:
+  name: Base Environment
+  meta:
+    id: env_f125bbaf7425484289125aac96d9dac0
+    created: 1749627604693
+    modified: 1749630710181
+    isPrivate: false
+  data:
+    apiTask: http://127.0.0.1:8000/api/
