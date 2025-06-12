@@ -16,7 +16,7 @@ Testar o projeto via insónia (Dexei um arquivo importado do insónia)
 
 ### Endpoints
 Listar os estados que serão usados no "SELECT"
-- GET /apiview-state
+- GET /api/view-state
 
 Adicionar uma nova tarefa
 - POST /api/add-task
