@@ -28,8 +28,8 @@ return new class extends Migration
             ],
             [
 
-                'name' => 'Mônica Fila',
-                'email' => 'monicafila@gmail.com',
+                'name' => 'John Doe',
+                'email' => 'johndoe@gmail.com',
                 'created_at' => now(),
                 'updated_at' => now()
             ]
